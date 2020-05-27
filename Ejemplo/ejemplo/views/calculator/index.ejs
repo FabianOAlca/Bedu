@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= subtitle %></p>
+    <h5>Calculadora</h5>
+    <div class="container bg-dark">
+        <div class="col">
+            <div class="container-fluid calc">
+                <p id="form_calc"></p>
+            </div>
+            <button type="button" class="btn btn-secondary" id="clear">CE</button>
+        </div>        
+        <div class="col">
+            <button type="button" class="btn btn-secondary" id="n7">7</button>
+            <button type="button" class="btn btn-secondary" id="n8">8</button>
+            <button type="button" class="btn btn-secondary" id="n9">9</button>
+            <button type="button" class="btn btn-secondary" id="op-div">/</button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-secondary" id="n4">4</button>
+            <button type="button" class="btn btn-secondary" id="n5">5</button>
+            <button type="button" class="btn btn-secondary" id="n6">6</button>
+            <button type="button" class="btn btn-secondary" id="op-mult">X</button>            
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-secondary" id="n1">1</button>
+            <button type="button" class="btn btn-secondary" id="n2">2</button>
+            <button type="button" class="btn btn-secondary" id="n3">3</button>
+            <button type="button" class="btn btn-secondary" id="op-sub">-</button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-secondary" id="n0">0</button>
+            <button type="button" class="btn btn-secondary" id="point">.</button>
+            <button type="button" class="btn btn-secondary" id="result">=</button>
+            <button type="button" class="btn btn-secondary" id="op-add">+</button>    
+        </div>
+        
+       
+    </div>
+    
+    <script src="/javascripts/cal.js"></script>
+  </body>
+</html>
